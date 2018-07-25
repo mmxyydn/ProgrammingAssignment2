@@ -1,7 +1,5 @@
-## Put comments here that give an overall description of what your
-## functions do
+## It's a function to make cache
 
-## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
 	m <- NULL
@@ -10,7 +8,7 @@ makeCacheMatrix <- function(x = matrix()) {
         m <<- NULL
     }
     get <- function() x
-    setsolve <- function(solve) m <<- solve(x)
+    setsolve <- function(inverse) m <<- inverse
     getsolve <- function() m
     list(set = set, get = get,
          setsolve = setsolve,
